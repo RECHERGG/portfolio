@@ -3,7 +3,8 @@ import React from "react";
 import type {Metadata} from "next";
 
 export const metadata: Metadata = {
-    title: "tobaben.dev | Imprint"
+    title: "tobaben.dev | Imprint",
+    robots: "noindex, nofollow",
 };
 
 export default function ImprintPage() {

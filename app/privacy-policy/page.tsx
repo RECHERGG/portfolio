@@ -4,6 +4,7 @@ import React from "react";
 
 export const metadata: Metadata = {
     title: "tobaben.dev | Privacy Policy",
+    robots: "noindex, nofollow",
 };
 
 export default function PrivacyPolicyPage() {
