@@ -3,7 +3,7 @@ import {BackgroundBeamsWithCollision} from "@/components/ui/background-beams-wit
 import React from "react";
 
 export const metadata: Metadata = {
-    title: "tobaben.dev | Privacy Policy",
+    title: "jtobaben.me | Privacy Policy",
     robots: "noindex, nofollow",
 };
 
