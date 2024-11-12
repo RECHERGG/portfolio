@@ -23,6 +23,13 @@ export default function NavigationHeader() {
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
+                <NavigationMenuItem>
+                    <Link href="/#Journey" legacyBehavior passHref>
+                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            Journey
+                        </NavigationMenuLink>
+                    </Link>
+                </NavigationMenuItem>
                 {/*
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
