@@ -4,6 +4,8 @@ import Image, {StaticImageData} from "next/image";
 import React, {useState} from "react";
 import { Timeline } from "@/components/ui/timeline";
 
+import polocloudDashboardPreview from "@/public/polocloud-dashboard-preview.png"
+
 import nextpizzaImageOne from "@/public/nextpizza-1.png";
 import nextpizzaImageTwo from "@/public/nextpizza-2.png";
 import nextpizzaImageThree from "@/public/nextpizza-3.png";
@@ -32,6 +34,20 @@ export function PersonalTimeline() {
                         I began working on <a className="font-bold text-blue-500 underline" href={"https://github.com/HttpMarco/polocloud"} target={"_blank"}>PoloCloud</a>, an open-source project that aims to provide a simple and easy-to-use cloud platform for Minecraft servers.
                         Since then, I support the project in my free time and work on new features and improvements.
                     </p>
+
+                    <div>
+                        <p className="text-neutral-200 text-xs md:text-sm font-normal">
+                            This is a preview of the upcoming dashboard for PoloCloud. <br/>
+                        </p>
+
+                        <Image
+                            src={polocloudDashboardPreview}
+                            alt="PoloCloud Dashboard Preview"
+                            className="rounded-lg object-cover w-full shadow-lg cursor-pointer"
+                            onClick={() => openModal(polocloudDashboardPreview)}
+                        />
+                        <p className="text-gray-400 text-xs mt-2">* Note: The image shown here was not created by me. I primarily worked on the cloud system, REST API, and additional modules/addons.</p>
+                    </div>
                 </div>
             ),
         },
@@ -91,8 +107,8 @@ export function PersonalTimeline() {
                         <Image
                             src={selectedImage}
                             alt="Enlarged project screenshot"
-                            width={800}
-                            height={800}
+                            width={1620}
+                            height={1200}
                             className="rounded-lg max-h-[90vh] max-w-[90vw]"
                         />
                     </div>
