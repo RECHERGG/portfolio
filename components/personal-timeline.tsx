@@ -36,7 +36,7 @@ export function PersonalTimeline() {
             content: (
                 <div>
                     <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-                        At the moment I'm working on a URL Shortener application. The app shows you helpful stats about your links - like how many people clicked them, where they're from, and what devices they use. You can track all your links in one simple dashboard.
+                    At the moment I&apos;m working on a URL Shortener application. The app shows you helpful stats about your links - like how many people clicked them, where they&apos;re from, and what devices they use. You can track all your links in one simple dashboard.
                     </p>
                     <div className="grid grid-cols-2 gap-4">
                         {[shortItOne, shortItTwo, shortItThree, shortItFour].map((img: StaticImageData, index) => (
