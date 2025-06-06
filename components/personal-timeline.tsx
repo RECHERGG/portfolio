@@ -11,6 +11,11 @@ import nextpizzaImageTwo from "@/public/nextpizza-2.png";
 import nextpizzaImageThree from "@/public/nextpizza-3.png";
 import nextpizzaImageFour from "@/public/nextpizza-4.png";
 
+import shortItOne from "@/public/short-it-preview-1.png";
+import shortItTwo from "@/public/short-it-preview-2.png";
+import shortItThree from "@/public/short-it-preview-3.png";
+import shortItFour from "@/public/short-it-preview-4.png";
+
 export function PersonalTimeline() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState<StaticImageData | null>(null);
@@ -26,6 +31,28 @@ export function PersonalTimeline() {
     };
 
     const data = [
+        {
+            title: "Currently",
+            content: (
+                <div>
+                    <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
+                        At the moment I'm working on a URL Shortener application. The app shows you helpful stats about your links - like how many people clicked them, where they're from, and what devices they use. You can track all your links in one simple dashboard.
+                    </p>
+                    <div className="grid grid-cols-2 gap-4">
+                        {[shortItOne, shortItTwo, shortItThree, shortItFour].map((img: StaticImageData, index) => (
+                            <Image
+                                key={index}
+                                src={img}
+                                alt="Project screenshot"
+                                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-lg cursor-pointer"
+                                onClick={() => openModal(img)}
+                            />
+                        ))}
+                        <p className="text-gray-400 text-xs mt-2">* Note: Keep in mind, this project is still under construction and not production ready.</p>
+                    </div>
+                </div>
+            ),
+        },
         {
             title: "Jun 16, 2024",
             content: (
