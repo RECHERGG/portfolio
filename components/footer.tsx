@@ -13,7 +13,7 @@ export default function Footer() {
                         <DiscordLogoIcon className="h-4 w-4"/>
                     </Button>
                 </a>
-                <a href="https://www.linkedin.com/in/joel-tobaben-5a251b300/" target="_blank">
+                <a href="https://www.linkedin.com/in/joel-tobaben" target="_blank">
                     <Button variant="outline" size="icon">
                         <LinkedInLogoIcon className="h-4 w-4"/>
                     </Button>
