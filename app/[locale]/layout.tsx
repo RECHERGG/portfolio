@@ -6,12 +6,25 @@ import { notFound } from "next/navigation";
 
 import "../globals.css";
 import { locales } from "@/i18n";
+import { ThemeProvider } from "@/components/theme-provider";
+import { SiteHeader } from "@/components/site-header";
+import { siteConfig } from "@/site";
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: "jtobaben.me",
-    description: "My personal portfolio website",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    //metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
+    keywords: ["portfolio", "Developer", "Java", "Backend", "tobaben", "joel", "rechergg"],
+    authors: [
+        {
+            name: "RECHERGG",
+            url: "https://jtobaben.me",
+        },
+    ],
+    creator: "RECHERGG",
+
 };
 
 type Props = {
@@ -40,11 +53,21 @@ export default async function LocalLayout({ children, params }: Props) {
     }
 
     return (
-        <html lang={locale}>
-            <body className={`${inter.className} antialiased`}>
-                <NextIntlClientProvider messages={messages} locale={locale}>
-                    {children}
-                </NextIntlClientProvider>
+        <html lang={locale} suppressHydrationWarning>
+            <body className={`${inter.className} antialiased [--header-height:calc(var(--spacing)*14)]`}>
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="system"
+                    enableSystem
+                    disableTransitionOnChange
+                >
+                    <NextIntlClientProvider messages={messages} locale={locale}>
+                        <div className="bg-background relative z-10 flex min-h-svh flex-col">
+                            <SiteHeader />
+                            <main className="flex flex-1 flex-col">{children}</main>
+                        </div>
+                    </NextIntlClientProvider>
+                </ThemeProvider>
             </body>
         </html>
     )
