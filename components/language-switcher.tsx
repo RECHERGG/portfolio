@@ -4,7 +4,6 @@ import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
-import { Globe } from "lucide-react";
 
 const languages = [
     { code: 'de', name: 'Deutsch', flag: '🇩🇪' },

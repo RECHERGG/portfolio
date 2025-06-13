@@ -13,7 +13,7 @@ export function SiteHeader() {
 
   return (
     <header className="bg-background sticky top-0 z-50 w-full">
-      <div className="container-wrapper 3xl:fixed:px-0 px-6">
+      <div className="container-wrapper 3xl:fixed:px-0 px-6 mx-auto max-w-5xl">
         <div className="3xl:fixed:container flex h-(--header-height) items-center gap-2 **:data-[slot=separator]:!h-4">
           {/*<MobileNav
             tree={pageTree}
@@ -28,7 +28,7 @@ export function SiteHeader() {
           >
             <Link href="/">
               <Terminal className="size-5" />
-              <span className="font-semibold text-lg">jtobaben.me</span>
+              <span className="font-semibold text-lg">{siteConfig.name}</span>
             </Link>
           </Button>
           {/*<MainNav items={siteConfig.navItems} className="hidden lg:flex" />*/}
