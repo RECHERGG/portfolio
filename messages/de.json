@@ -1,4 +1,25 @@
 {
-    "title": "Joel Tobaben",
-    "subTitle": "Software Entwickler"
+    "profile": {
+        "introduction": {
+            "firstLine": "Hey, ich bin Joel.",
+            "secondLine": "Ich bin ein Fullstack",
+            "thirdLine": "Software Entwickler."
+        },
+        "badges": {
+            "location": "Görlitz, Sachsen, Deutschland",
+            "age": "Jahre",
+            "languages": {
+                "de": "Deutsch (Muttersprache)",
+                "en": "Englisch (fließend)"
+            }
+        },
+        "techstack": {
+            "java": "Programmiersprache",
+            "mongodb": "Datenbank",
+            "docker": "Containerisierung",
+            "git": "Versionsverwaltung",
+            "typescript": "Programmiersprache",
+            "react": "Javascript Bibliothek"
+        }
+    }
 }

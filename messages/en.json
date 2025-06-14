@@ -1,4 +1,25 @@
 {
-    "title": "Joel Tobaben",
-    "subTitle": "Software Engineer"
+    "profile": {
+        "introduction": {
+            "firstLine": "Hi, I'm Joel.",
+            "secondLine": "I'm a Fullstack",
+            "thirdLine": "Software Engineer."
+        },
+        "badges": {
+            "location": "Görlitz, Saxony, Germany",
+            "age": "Years",
+            "languages": {
+                "de": "German (native)",
+                "en": "English (fluent)"
+            }
+        },
+        "techstack": {
+            "java": "Programming Language",
+            "mongodb": "Database",
+            "docker": "Containerization",
+            "git": "Version Control",
+            "typescript": "Programming Language",
+            "react": "Javascript Library"
+        }
+    }
 }

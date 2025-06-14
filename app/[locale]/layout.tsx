@@ -9,6 +9,7 @@ import { locales } from "@/i18n";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SiteHeader } from "@/components/site-header";
 import { siteConfig } from "@/site";
+import SiteFooter from "@/components/site-footer";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -62,9 +63,16 @@ export default async function LocalLayout({ children, params }: Props) {
                     disableTransitionOnChange
                 >
                     <NextIntlClientProvider messages={messages} locale={locale}>
-                        <div className="bg-background relative z-10 flex min-h-svh flex-col">
+                        <div className="min-h-screen flex flex-col">
                             <SiteHeader />
-                            <main className="flex flex-1 flex-col">{children}</main>
+
+                            <div className="container mx-auto px-4 min-h-screen flex flex-col max-w-[53%]">
+                                <main className="flex-1 flex">{children}</main>
+                            </div>
+
+                            <div className="flex items-center justify-center">
+                                <SiteFooter />
+                            </div>
                         </div>
                     </NextIntlClientProvider>
                 </ThemeProvider>
