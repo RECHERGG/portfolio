@@ -49,7 +49,7 @@ export default async function LocalLayout({ children, params }: Props) {
     let messages;
     try {
         messages = await getMessages({ locale });
-    } catch (error) {
+    } catch (_) {
         notFound();
     }
 
