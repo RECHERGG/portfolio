@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { IdCard, Languages, MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Separator } from "@/components/ui/separator";
+import Timeline from "@/components/timeline";
 
 export default function HomePage() {
     const t = useTranslations();
@@ -44,17 +45,17 @@ export default function HomePage() {
 
                     <Separator />
 
-                    <h2 className="text-2xl font-bold">TechStack</h2>
+                    <h2 className="text-2xl font-semibold">TechStack</h2>
                     <TechStack />
                 </div>
             </motion.aside>
 
-            <div className="flex flex-col">
-                {/* Job Position Timeline */}
+            <div className="flex-1 min-w-0 space-y-8">
                 <section className="space-y-4">
-                    <h2 className="text-2xl font-bold">Berufserfahrung</h2>
-                    {/* Timeline content here */}
+                <Timeline />
                 </section>
+
+                <Separator />
 
                 {/* Projects */}
                 <section className="space-y-4">

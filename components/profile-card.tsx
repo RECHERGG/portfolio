@@ -22,7 +22,7 @@ export default function ProfileCard() {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
-                            className="text-2xl font-bold"
+                            className="text-2xl font-extrabold"
                         >
                             {t("profile.introduction.firstLine")}
                         </motion.h1>
@@ -30,7 +30,7 @@ export default function ProfileCard() {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: 0.3 }}
-                            className="text-2xl font-bold text-gray-400"
+                            className="text-2xl font-extrabold text-gray-400"
                         >
                             {t("profile.introduction.secondLine")}
                         </motion.h1>
@@ -38,7 +38,7 @@ export default function ProfileCard() {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: 0.4 }}
-                            className="text-2xl font-bold text-gray-400"
+                            className="text-2xl font-extrabold text-gray-400"
                         >
                             {t("profile.introduction.thirdLine")}
                         </motion.h1>

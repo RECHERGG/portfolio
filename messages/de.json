@@ -21,5 +21,23 @@
             "typescript": "Programmiersprache",
             "react": "Javascript Bibliothek"
         }
+    },
+    "workexperience": {
+        "title": "Berufserfahrung",
+        "1": {
+            "title": "Praktikant in der Softwareentwicklung",
+            "location": "Görlitz, Sachsen, Deutschland",
+            "startDate": "11. März, 2024",
+            "endDate": "22. März, 2024",
+            "description": "Entwicklung einer prototypischen Webapplikation mit React, Next.js und Tailwind. Umsetzung eines Showcases für ein Schieberegister mit dem Calliope Mini. Backend-Entwicklung in Java mit Javalin. Fundierte Kenntnisse in der seriellen zu parallelen Datenumwandlung am \"74HC595\" Schieberegister."
+        },
+        "2": {
+            "title": "Praktikant in der Softwareentwicklung",
+            "location": "Görlitz, Sachsen, Deutschland",
+            "startDate": "12. Juni, 2023",
+            "endDate": "16. Juni, 2023",
+            "description": "Erstellung eines GTA für den Calliope Mini mit JavaScript unter Einhaltung von Codestyle-Richtlinien. Verfassen eines Projektsteckbriefs und Evaluierung einer REST API mit Kotlin.",
+            "codeStyle": "Code Strukturierung"
+        }
     }
 }
