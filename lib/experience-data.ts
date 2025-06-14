@@ -1,5 +1,3 @@
-import { tr } from "motion/react-client"
-
 export interface Experience {
   id: number
   title: string

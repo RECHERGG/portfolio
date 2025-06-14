@@ -45,27 +45,27 @@ export default function HomePage() {
 
                     <Separator />
 
-                    <h2 className="text-2xl font-semibold">TechStack</h2>
+                    <h2 className="text-2xl font-semibold">Tech Stack</h2>
                     <TechStack />
                 </div>
             </motion.aside>
 
             <div className="flex-1 min-w-0 space-y-8">
-                <section className="space-y-4">
-                <Timeline />
+                <section id="work-experience" className="space-y-4">
+                    <Timeline />
                 </section>
 
                 <Separator />
 
                 {/* Projects */}
-                <section className="space-y-4">
+                <section id="projects" className="space-y-4">
                     <h2 className="text-2xl font-bold">Projekte</h2>
                     {/* Project cards here */}
                 </section>
 
                 {/* Tech Stack */}
                 <section className="space-y-4">
-                    <h2 className="text-2xl font-bold">Tech Stack</h2>
+                    <h2 className="text-2xl font-bold"></h2>
                     {/* Tech stack content here */}
                 </section>
             </div>

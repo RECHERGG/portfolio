@@ -1,3 +1,5 @@
+'use client';
+
 import Link from "next/link"
 
 import { ModeSwitcher } from "@/components/mode-switcher"
@@ -5,10 +7,14 @@ import { ModeSwitcher } from "@/components/mode-switcher"
 import { Separator } from "./ui/separator"
 import { Button } from "./ui/button"
 import LanguageSwitcher from "./language-switcher"
-import { siteConfig } from "@/site"
-import { Code, FileScan, Inbox, Terminal } from "lucide-react"
+import { siteConfig } from "@/lib/config"
+import {  Terminal } from "lucide-react"
+import { MainNav } from "./main-nav"
+import { getNavItems } from "@/lib/nav-items"
+import { useTranslations } from "next-intl";
 
 export function SiteHeader() {
+  const t = useTranslations();
   //const pageTree = source.pageTree
 
   return (
@@ -31,7 +37,7 @@ export function SiteHeader() {
               <span className="font-semibold text-lg">{siteConfig.name}</span>
             </Link>
           </Button>
-          {/*<MainNav items={siteConfig.navItems} className="hidden lg:flex" />*/}
+          <MainNav items={getNavItems(t)} className="hidden lg:flex pl-36" />
           <div className="ml-auto flex items-center gap-2 md:flex-1 md:justify-end">
             <LanguageSwitcher />
             <Separator orientation="vertical" />

@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { siteConfig } from "@/lib/config";
 
 export default function ProfileCard() {
     const t = useTranslations();
@@ -51,7 +52,7 @@ export default function ProfileCard() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.5 }}
                     >
-                        <Link href="mailto:contact@jtobaben.me" target="_blank" rel="noopener noreferrer">
+                        <Link href={`mailto:${siteConfig.links.mail}`} target="_blank" rel="noopener noreferrer">
                             <motion.div
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
@@ -67,7 +68,7 @@ export default function ProfileCard() {
                             </motion.div>
                         </Link>
 
-                        <Link href="https://www.linkedin.com/in/joel-tobaben" target="_blank" rel="noopener noreferrer">
+                        <Link href={siteConfig.links.linkedin} target="_blank" rel="noopener noreferrer">
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                                 <Button variant="outline" size="icon" className="hover:cursor-pointer">
                                     <Linkedin className="size-5" />
@@ -76,7 +77,7 @@ export default function ProfileCard() {
                         </Link>
 
                         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                            <Link href="https://github.com/rechergg" target="_blank" rel="noopener noreferrer">
+                            <Link href={siteConfig.links.github} target="_blank" rel="noopener noreferrer">
                                 <Button variant="outline" size="icon" className="hover:cursor-pointer">
                                     <svg
                                         role="img"
@@ -91,7 +92,7 @@ export default function ProfileCard() {
                         </motion.div>
 
                         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                            <Link href="https://x.com/rechergg" target="_blank" rel="noopener noreferrer">
+                            <Link href={siteConfig.links.twitter} target="_blank" rel="noopener noreferrer">
                                 <Button variant="outline" size="icon" className="hover:cursor-pointer">
                                     <svg
                                         role="img"

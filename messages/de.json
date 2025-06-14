@@ -1,4 +1,8 @@
 {
+    "navItems": {
+        "workexperience": "Berufserfahrung",
+        "projects": "Projekte"
+    },
     "profile": {
         "introduction": {
             "firstLine": "Hey, ich bin Joel.",

@@ -8,7 +8,7 @@ import "../globals.css";
 import { locales } from "@/i18n";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SiteHeader } from "@/components/site-header";
-import { siteConfig } from "@/site";
+import { siteConfig } from "@/lib/config";
 import SiteFooter from "@/components/site-footer";
 
 const inter = Inter({ subsets: ['latin'] });
