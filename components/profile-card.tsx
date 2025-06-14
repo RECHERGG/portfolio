@@ -1,5 +1,5 @@
 'use client';
-import { Linkedin, Send, X } from "lucide-react";
+import { Linkedin, Send } from "lucide-react";
 import { Card, CardContent, CardHeader } from "./ui/card";
 import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
