@@ -28,7 +28,7 @@ export default function HomePage() {
             >
                 <ProfileCard />
 
-                <div className="space-y-6 pt-2">
+                <div className="space-y-6 pt-2 overflow-hidden">
 
                     <DiscordCard />
 
