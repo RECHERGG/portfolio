@@ -9,7 +9,8 @@ export const siteConfig = {
         linkedin: "https://www.linkedin.com/in/joel-tobaben",
         github: "https://github.com/rechergg",
         twitter: "https://x.com/rechergg"
-    }
+    },
+    discordId: "697131095015293009"
   }
   
   export type SiteConfig = typeof siteConfig

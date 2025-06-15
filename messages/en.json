@@ -26,6 +26,11 @@
             "react": "Javascript Library"
         }
     },
+    "discord": {
+        "activity": {
+            "since": "since"
+        }
+    },
     "workexperience": {
         "title": "Work Experience",
         "1": {

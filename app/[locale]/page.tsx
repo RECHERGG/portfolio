@@ -8,6 +8,7 @@ import { IdCard, Languages, MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Separator } from "@/components/ui/separator";
 import Timeline from "@/components/timeline";
+import DiscordCard from "@/components/discord-card";
 
 export default function HomePage() {
     const t = useTranslations();
@@ -27,7 +28,10 @@ export default function HomePage() {
             >
                 <ProfileCard />
 
-                <div className="space-y-6">
+                <div className="space-y-6 pt-2">
+
+                    <DiscordCard />
+
                     <div className="flex flex-wrap gap-2 pt-2">
                         <Badge variant="outline">
                             <MapPin /> {t("profile.badges.location")}
