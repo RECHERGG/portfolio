@@ -8,7 +8,7 @@ import { IdCard, Languages, MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Separator } from "@/components/ui/separator";
 import Timeline from "@/components/timeline";
-import DiscordCard from "@/components/discord-card";
+import DiscordCard from "@/components/discord/discord-card";
 
 export default function HomePage() {
     const t = useTranslations();
