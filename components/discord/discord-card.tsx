@@ -2,13 +2,13 @@
 
 import { siteConfig } from "@/lib/config"
 import Link from "next/link"
-import Marquee from "./spotify-marquee"
 import { useLanyard } from "react-use-lanyard"
 import { useEffect, useMemo, useState } from "react";
 import { formatElapsedTime, formatTime } from "@/lib/time";
 import { getStatusColor, getStatusText } from "@/lib/status";
 import { useTranslations } from "next-intl";
 import { Progress } from "../ui/progress";
+import { Marquee } from "./spotify-marquee";
 
 export default function DiscordCard() {
     const { loading, status: data } = useLanyard({
