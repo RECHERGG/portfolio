@@ -7,8 +7,9 @@ import { Badge } from '@/components/ui/badge';
 import { IdCard, Languages, MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Separator } from "@/components/ui/separator";
-import Timeline from "@/components/timeline";
 import DiscordCard from "@/components/discord/discord-card";
+import Projects from "@/components/projects/projects";
+import Timeline from "@/components/experience/timeline";
 
 export default function HomePage() {
     const t = useTranslations();
@@ -63,8 +64,7 @@ export default function HomePage() {
 
                 {/* Projects */}
                 <section id="projects" className="space-y-4">
-                    <h2 className="text-2xl font-bold">Projekte</h2>
-                    {/* Project cards here */}
+                    <Projects />
                 </section>
 
                 {/* Tech Stack */}

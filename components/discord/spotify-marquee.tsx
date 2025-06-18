@@ -39,7 +39,7 @@ export const Marquee = ({ song, artist }: MarqueeProps) => {
     >
       <span
         ref={textRef}
-        className={`text-sm text-gray-300 inline-block transition-transform duration-300 ${shouldAnimate
+        className={`text-sm dark:text-gray-300 text-gray-700 inline-block transition-transform duration-300 ${shouldAnimate
             ? 'animate-marquee'
             : ''
           }`}

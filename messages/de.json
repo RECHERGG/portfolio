@@ -48,5 +48,11 @@
             "description": "Erstellung eines GTA für den Calliope Mini mit JavaScript unter Einhaltung von Codestyle-Richtlinien. Verfassen eines Projektsteckbriefs und Evaluierung einer REST API mit Kotlin.",
             "codeStyle": "Code Strukturierung"
         }
+    },
+    "projects": {
+        "title": "Projekte",
+        "1": {
+            "description": "Dieses Portfolio zeigt meinen Werdegang und meine Arbeit als Fullstack-Softwareentwickler und hebt meine praktischen Erfahrungen mit modernen Webtechnologien hervor."
+        }
     }
 }
