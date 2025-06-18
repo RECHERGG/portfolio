@@ -66,12 +66,6 @@ export default function HomePage() {
                 <section id="projects" className="space-y-4">
                     <Projects />
                 </section>
-
-                {/* Tech Stack */}
-                <section className="space-y-4">
-                    <h2 className="text-2xl font-bold"></h2>
-                    {/* Tech stack content here */}
-                </section>
             </div>
         </motion.div >
     );

@@ -1,5 +1,8 @@
-import portfolio from "@/public/projects/portfolio.png"
 import { StaticImageData } from "next/image";
+
+import portfolio from "@/public/projects/portfolio.png";
+import nextPizza from "@/public/projects/nextpizza.png";
+
 
 export type ProjectProps = {
     thumbnail: StaticImageData;
@@ -53,8 +56,40 @@ export function getProjects(t: (key: string) => string): ProjectProps[] {
                     name: "Vercel"
                 }
             ],
-            github: "https://github.com/rechergg/portfolio",
+            github: "https://github.com/RECHERGG/portfolio",
             demo: "https://jtobaben.me/"
+        },
+        {
+            thumbnail: nextPizza,
+            title: "NextPizza",
+            description: t("projects.2.description"),
+            technologies: [
+                {
+                    name: "Next.js"
+                },
+                {
+                    name: "Typescript"
+                },
+                {
+                    name: "axios"
+                },
+                {
+                    name: "react-chartjs-2"
+                },
+                {
+                    name: "Java"
+                },
+                {
+                    name: "Javalin"
+                },
+                {
+                    name: "MongoDB"
+                },
+                {
+                    name: "Docker"
+                }
+            ],
+            github: "https://github.com/RECHERGG/NextPizza",
         }
     ]
   }
