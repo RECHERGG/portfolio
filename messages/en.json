@@ -57,5 +57,46 @@
         "2": {
             "description": "This project was created during my internship. It also was my first real touch with Next.js"
         }
+    },
+    "imprint": {
+        "title": "Imprint",
+        "name": "Joel Tobaben",
+        "emailLabel": "Email",
+        "disclaimer": "This is a private website used to present personal projects and work. It is intended solely for non-commercial self-presentation purposes.",
+        "additionalInfo": "Further information in accordance with § 5 DDG (Digital Services Act, Germany) and complete contact details will be provided upon request if a legitimate interest is demonstrated. Please contact the email address above for such inquiries."
+    },
+    "privacy-policy": {
+        "title": "Privacy Policy",
+        "intro": "This privacy policy informs you about the type, scope, and purpose of the collection and use of personal data on this website.",
+        "responsible": {
+            "title": "Controller",
+            "text": "The controller within the meaning of the GDPR is:",
+            "emailLabel": "Email"
+        },
+        "dataAccess": {
+            "title": "Access Data",
+            "text": "When you visit this website, information about accesses to the server (e.g. IP address, browser type, date and time) is automatically stored. This data is technically necessary to display the website correctly and to ensure its security. This data is not merged with other data sources."
+        },
+        "contact": {
+            "title": "Contact",
+            "text": "If you contact me via email, your transmitted data (e.g. email address, message content) will be stored for the purpose of processing the request. This data will not be shared without your consent."
+        },
+        "analytics": {
+            "title": "Statistical Analysis",
+            "text": "This website may collect anonymized usage data to improve the user experience. No personal profiles are created, and no cookies are used. The analysis is performed on an aggregated basis only."
+        },
+        "hosting": {
+            "title": "Website Hosting",
+            "text": "This website is hosted by an external service provider (web hosting provider). All server-related data (such as access logs and IP addresses) are processed there to ensure a reliable and secure operation."
+        },
+        "rights": {
+            "title": "Your Rights",
+            "text": "You have the right to obtain information about the personal data we store, as well as the right to correction, deletion, or restriction of processing. Please contact the email address mentioned above."
+        },
+        "legalBasis": {
+            "title": "Legal Basis",
+            "text": "Data processing is carried out in accordance with Article 6(1)(f) GDPR based on our legitimate interest in a secure, stable, and optimized website."
+        },
+        "lastUpdated": "Last updated: June 19, 2025"
     }
 }
