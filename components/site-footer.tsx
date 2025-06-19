@@ -21,7 +21,7 @@ export default function SiteFooter() {
                     </Link>
                 </div>
                 
-                Made with 💖 by Joel Tobaben <br />
+                Made with 💖 <br className="lg:hidden" />by Joel Tobaben <br />
                 © {new Date().getFullYear()} All rights reserved
             </div>
         </footer>
