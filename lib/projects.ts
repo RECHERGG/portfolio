@@ -62,7 +62,7 @@ export function getProjects(t: (key: string) => string): ProjectProps[] {
         {
             thumbnail: portfolioV1,
             title: "Portfolio v1",
-            description: t("projects.1.description"),
+            description: t("projects.2.description"),
             technologies: [
                 {
                     name: "Next.js"
@@ -87,12 +87,12 @@ export function getProjects(t: (key: string) => string): ProjectProps[] {
                 },
             ],
             github: "https://github.com/RECHERGG/portfolio/tree/v1",
-            demo: "https://portfolio-3buz6br8e-joels-projects-15c05343.vercel.app"
+            demo: "https://portfolio-git-master-joels-projects-15c05343.vercel.app"
         },
         {
             thumbnail: nextPizza,
             title: "NextPizza",
-            description: t("projects.2.description"),
+            description: t("projects.3.description"),
             technologies: [
                 {
                     name: "Next.js"
