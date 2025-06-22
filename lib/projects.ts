@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image";
 
-import portfolio from "@/public/projects/portfolio.png";
+import portfolioV2 from "@/public/projects/portfolio_v2.png";
+import portfolioV1 from "@/public/projects/portfolio_v1.png";
 import nextPizza from "@/public/projects/nextpizza.png";
 
 
@@ -21,8 +22,8 @@ type Technologie = {
 export function getProjects(t: (key: string) => string): ProjectProps[] {
     return [
         {
-            thumbnail: portfolio,
-            title: "Portfolio",
+            thumbnail: portfolioV2,
+            title: "Portfolio v2",
             description: t("projects.1.description"),
             technologies: [
                 {
@@ -56,8 +57,37 @@ export function getProjects(t: (key: string) => string): ProjectProps[] {
                     name: "Vercel"
                 }
             ],
-            github: "https://github.com/RECHERGG/portfolio",
-            demo: "https://jtobaben.me/"
+            github: "https://github.com/RECHERGG/portfolio"
+        },
+        {
+            thumbnail: portfolioV1,
+            title: "Portfolio v1",
+            description: t("projects.1.description"),
+            technologies: [
+                {
+                    name: "Next.js"
+                },
+                {
+                    name: "shadcn/ui"
+                },
+                {
+                    name: "motion"
+                },
+                {
+                    name: "lucid-react"
+                },
+                {
+                    name: "tailwindcss"
+                },
+                {
+                    name: "Typescript"
+                },
+                {
+                    name: "Vercel"
+                },
+            ],
+            github: "https://github.com/RECHERGG/portfolio/tree/v1",
+            demo: "https://portfolio-3buz6br8e-joels-projects-15c05343.vercel.app"
         },
         {
             thumbnail: nextPizza,
