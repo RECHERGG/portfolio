@@ -9,6 +9,7 @@ import { getStatusColor, getStatusText } from "@/lib/status";
 import { useTranslations } from "next-intl";
 import { Progress } from "../ui/progress";
 import { Marquee } from "./spotify-marquee";
+import Image from 'next/image'
 
 export default function DiscordCard() {
     const { loading, status: data } = useLanyard({
@@ -119,7 +120,7 @@ export default function DiscordCard() {
                 </div>
 
                 <div className="relative flex-shrink-0">
-                    <img
+                    <Image
                         src={avatarUrl || "https://archive.org/download/discordprofilepictures/discordgrey.png"}
                         alt={`${discord_user.global_name || discord_user.username} Avatar`}
                         className="w-12 h-12 rounded-full"
