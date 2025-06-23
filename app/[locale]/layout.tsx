@@ -16,7 +16,6 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
-    metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
     keywords: ["portfolio", "developer", "java", "backend", "tobaben", "joel", "rechergg"],
     authors: [
         {
