@@ -124,6 +124,8 @@ export default function DiscordCard() {
                         src={avatarUrl || "https://archive.org/download/discordprofilepictures/discordgrey.png"}
                         alt={`${discord_user.global_name || discord_user.username} Avatar`}
                         className="w-12 h-12 rounded-full"
+                        width={48}
+                        height={48}
                     />
 
                     <div className="absolute -bottom-1 -right-0">
