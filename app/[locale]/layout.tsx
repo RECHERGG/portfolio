@@ -16,8 +16,8 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
-    //metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
-    keywords: ["portfolio", "Developer", "Java", "Backend", "tobaben", "joel", "rechergg"],
+    metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
+    keywords: ["portfolio", "developer", "java", "backend", "tobaben", "joel", "rechergg"],
     authors: [
         {
             name: "RECHERGG",
@@ -25,7 +25,30 @@ export const metadata: Metadata = {
         },
     ],
     creator: "RECHERGG",
-
+    openGraph: {
+        type: "website",
+        locale: "de_DE",
+        alternateLocale: "en_US",
+        url: process.env.NEXT_PUBLIC_APP_URL!,
+        title: siteConfig.name,
+        description: siteConfig.description,
+        siteName: siteConfig.name,
+        images: [
+            {
+                url: `${process.env.NEXT_PUBLIC_APP_URL}/opengraph-image.png`,
+                width: 1200,
+                height: 630,
+                alt: siteConfig.name,
+            }
+        ]
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: siteConfig.name,
+        description: siteConfig.description,
+        creator: "@rechergg",
+        images: [`${process.env.NEXT_PUBLIC_APP_URL}/opengraph-image.png`],
+    }
 };
 
 type Props = {
