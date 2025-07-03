@@ -20,7 +20,15 @@ export default function ProjectCard(props: ProjectProps) {
             </AspectRatio>
 
             <CardHeader>
-                <CardTitle className="text-xl font-bold">{props.title}</CardTitle>
+                <CardTitle className="text-xl font-bold flex items-center gap-2">
+                    {props.title}
+                    {props.development && (
+                        <Badge variant="default" className="w-fit animate-pulse">
+                            In Progress
+                        </Badge>
+                    )}
+                </CardTitle>
+
                 <CardDescription>{props.description}</CardDescription>
             </CardHeader>
 

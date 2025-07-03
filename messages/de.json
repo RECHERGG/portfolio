@@ -51,13 +51,16 @@
     },
     "projects": {
         "title": "Projekte",
-        "1": {
-            "description": "Das Portfolio zeigt meinen Werdegang und meine Arbeit als Fullstack-Softwareentwickler und hebt meine praktischen Erfahrungen mit modernen Webtechnologien hervor."
+        "1" : {
+            "description": "Eine Java SDK für die Integration mit der Polar.sh API, die eine typsichere Anbindung an den Dienst ermöglicht. Die SDK nutzt moderne Java-Features und bietet eine benutzerfreundliche Schnittstelle und stammt nicht offiziell von polar.sh"
         },
         "2": {
-            "description": "Dies ist die erste Version meines persönlichen Portfolios. Es enthält Informationen über mich, meinen Werdegang und meinen Tech Stack."
+            "description": "Das Portfolio zeigt meinen Werdegang und meine Arbeit als Fullstack-Softwareentwickler und hebt meine praktischen Erfahrungen mit modernen Webtechnologien hervor."
         },
         "3": {
+            "description": "Dies ist die erste Version meines persönlichen Portfolios. Es enthält Informationen über mich, meinen Werdegang und meinen Tech Stack."
+        },
+        "4": {
             "description": "Dieses Projekt ist während meines Praktikums entstanden. Es war auch meine erste echte Berührung mit Next.js"
         }
     },

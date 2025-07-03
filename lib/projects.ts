@@ -1,5 +1,6 @@
 import { StaticImageData } from "next/image";
 
+import polar from "@/public/projects/polar.png";
 import portfolioV2 from "@/public/projects/portfolio_v2.png";
 import portfolioV1 from "@/public/projects/portfolio_v1.png";
 import nextPizza from "@/public/projects/nextpizza.png";
@@ -12,6 +13,7 @@ export type ProjectProps = {
     technologies: Technologie[];
     github: string;
     demo?: string;
+    development?: boolean;
 }
 
 type Technologie = {
@@ -22,9 +24,46 @@ type Technologie = {
 export function getProjects(t: (key: string) => string): ProjectProps[] {
     return [
         {
+            thumbnail: polar,
+            title: "polar-java-sdk",
+            description: t("projects.1.description"),
+            development: true,
+            technologies: [
+                {
+                    name: "Java"
+                },
+                {
+                    name: "JUnit"
+                },
+                {
+                    name: "slf4j"
+                },
+                {
+                    name: "log4j2"
+                },
+                {
+                    name: "lombok"
+                },
+                {
+                    name: "okhttp3"
+                },
+                {
+                    name: "gson"
+                },
+                {
+                    name: "jackson-databind"
+                },
+                {
+                    name: "annotations"
+                },
+            ],
+            github: "https://github.com/RECHERGG/polar-java-sdk",
+        },
+        {
             thumbnail: portfolioV2,
             title: "Portfolio v2",
-            description: t("projects.1.description"),
+            description: t("projects.2.description"),
+            development: true,
             technologies: [
                 {
                     name: "Next.js"
@@ -62,7 +101,7 @@ export function getProjects(t: (key: string) => string): ProjectProps[] {
         {
             thumbnail: portfolioV1,
             title: "Portfolio v1",
-            description: t("projects.2.description"),
+            description: t("projects.3.description"),
             technologies: [
                 {
                     name: "Next.js"
@@ -92,7 +131,7 @@ export function getProjects(t: (key: string) => string): ProjectProps[] {
         {
             thumbnail: nextPizza,
             title: "NextPizza",
-            description: t("projects.3.description"),
+            description: t("projects.4.description"),
             technologies: [
                 {
                     name: "Next.js"

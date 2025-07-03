@@ -20,7 +20,7 @@ export default function Projects() {
                     viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                 >
-                    <ProjectCard key={project.title} thumbnail={project.thumbnail} title={project.title} description={project.description} technologies={project.technologies} github={project.github} demo={project.demo} />
+                    <ProjectCard key={project.title} thumbnail={project.thumbnail} title={project.title} description={project.description} technologies={project.technologies} github={project.github} demo={project.demo} development={project.development} />
                 </motion.div>
             ))}
         </div>
