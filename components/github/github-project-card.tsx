@@ -104,7 +104,7 @@ export default function GitHubProjectCard({ owner, repo }: GitHubProjectCardProp
                   {repoData.name}
                 </h3>
                 <Badge variant="outline" className="text-xs">
-                  Contributor
+                  Collaborator
                 </Badge>
               </div>
               <p className="text-sm text-neutral-600 dark:text-neutral-400 line-clamp-2 mb-2">{repoData.description}</p>
