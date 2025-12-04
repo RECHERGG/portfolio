@@ -14,9 +14,9 @@ export default function ImprintPage() {
                 <p>{t("emailLabel")}:{" "}
                     <a
                         className="text-blue-500 hover:underline"
-                        href="mailto:contact@jtobaben.me"
+                        href="mailto:contact@tobaben.dev"
                     >
-                        contact@jtobaben.me
+                        contact@tobaben.dev
                     </a>
                 </p>
             </section>

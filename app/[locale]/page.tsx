@@ -29,7 +29,7 @@ export default function HomePage() {
             >
                 <ProfileCard />
 
-                <div className="space-y-6 pt-2 overflow-hidden">
+                <div className="space-y-4 pt-2 overflow-hidden">
 
                     <DiscordCard />
 
@@ -49,8 +49,6 @@ export default function HomePage() {
                     </div>
 
                     <Separator />
-
-                    <h2 className="text-2xl font-semibold">Tech Stack</h2>
                     <TechStack />
                 </div>
             </motion.aside>

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     authors: [
         {
             name: "RECHERGG",
-            url: "https://jtobaben.me",
+            url: "https://tobaben.dev",
         },
     ],
     creator: "RECHERGG",
@@ -85,7 +85,7 @@ export default async function LocalLayout({ children, params }: Props) {
                     disableTransitionOnChange
                 >
                     <NextIntlClientProvider messages={messages} locale={locale}>
-                        <div className="min-h-screen flex flex-col">
+                        <div className="min-h-screen flex flex-col space-y-8">
                             <SiteHeader />
 
                             <div className="container mx-auto px-4 min-h-screen flex flex-col md:max-w-[53%]">

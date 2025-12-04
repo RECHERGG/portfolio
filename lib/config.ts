@@ -1,11 +1,11 @@
 export const siteConfig = {
-    name: "jtobaben.me",
-    url: "https://jtobaben.me",
+    name: "tobaben.dev",
+    url: "https://tobaben.dev",
     ogImage: "https://ui.shadcn.com/og.jpg",
     description:
       "Softwareentwickler mit Fokus auf React, Next.js und Java. Portfolio mit verschiedenen Projekten und Experimenten.",
     links: {
-        mail: "contact@jtobaben.me",
+        mail: "contact@tobaben.dev",
         linkedin: "https://www.linkedin.com/in/joel-tobaben",
         github: "https://github.com/rechergg",
         twitter: "https://x.com/rechergg"

@@ -21,16 +21,17 @@ export default function TechStack() {
             transition={{ duration: 0.5 }}
         >
             <div className="space-y-4 pb-4">
-                {techStack.map((stack) => (
-                    <TechStackCard key={`${stack.name}-${stack.type}`} techStack={stack} />
-                ))}
+                <div className="space-y-2">
+                    <h3 className="text-xl font-semibold text-neutral-900 dark:text-white">Open Source Contributions</h3>
+                    <GitHubProjectCard owner="thePolocloud" repo="polocloud" />
+                </div>
 
                 <Separator className="my-4" />
 
-                <div className="space-y-2">
-                    <h3 className="text-lg font-medium text-neutral-900 dark:text-white">Open Source Contributions</h3>
-                    <GitHubProjectCard owner="HttpMarco" repo="polocloud" />
-                </div>
+                <h2 className="text-xl font-semibold">Tech Stack</h2>
+                {techStack.map((stack) => (
+                    <TechStackCard key={`${stack.name}-${stack.type}`} techStack={stack} />
+                ))}
             </div>
         </motion.div>
     );

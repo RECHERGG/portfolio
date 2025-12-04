@@ -33,14 +33,24 @@
     },
     "workexperience": {
         "title": "Berufserfahrung",
-        "1": {
+        "badge": {
+            "current": "Aktuell"
+        },
+        "3": {
+            "title": "Praktikant im Online Marketing",
+            "location": "Görlitz, Sachsen, Deutschland",
+            "startDate": "25. August, 2025",
+            "endDate": "Heute",
+            "description": "LiberTec ist eine Full-Service Online-Marketing-Agentur, die Unternehmen bei Ads, Content, Webentwicklung und Design unterstützt. Während meines Praktikums arbeite ich in verschiedenen Bereichen mit, unter anderem bei Video-Schnitt, Animationen, Ads und der Gestaltung von Designs. So bekomme ich einen guten Einblick in die vielseitigen Aufgaben einer Marketing-Agentur."
+        },
+        "2": {
             "title": "Praktikant in der Softwareentwicklung",
             "location": "Görlitz, Sachsen, Deutschland",
             "startDate": "11. März, 2024",
             "endDate": "22. März, 2024",
             "description": "Entwicklung einer prototypischen Webapplikation mit React, Next.js und Tailwind. Umsetzung eines Showcases für ein Schieberegister mit dem Calliope Mini. Backend-Entwicklung in Java mit Javalin. Fundierte Kenntnisse in der seriellen zu parallelen Datenumwandlung am \"74HC595\" Schieberegister."
         },
-        "2": {
+        "1": {
             "title": "Praktikant in der Softwareentwicklung",
             "location": "Görlitz, Sachsen, Deutschland",
             "startDate": "12. Juni, 2023",

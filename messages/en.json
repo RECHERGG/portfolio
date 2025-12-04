@@ -33,14 +33,24 @@
     },
     "workexperience": {
         "title": "Work Experience",
-        "1": {
+        "badge": {
+            "current": "Current"
+        },
+        "3": {
+            "title": "Digital Marketing Intern",
+            "location": "Görlitz, Saxony, Germany",
+            "startDate": "August 25, 2025",
+            "endDate": "Today",
+            "description": "LiberTec is a full-service online marketing agency that supports businesses with ads, content, web development, and design. During my internship, I work in various areas, including video editing, animations, ads, and design creation. This gives me a solid insight into the diverse tasks of a marketing agency."
+        },
+        "2": {
             "title": "Software development internship",
             "location": "Görlitz, Saxony, Germany",
             "startDate": "March 11, 2024",
             "endDate": "March 22, 2024",
             "description": "Development of a prototype web application with React, Next.js, and Tailwind. Implementation of a showcase for a shift register using the Calliope Mini. Backend development in Java with Javalin. Solid understanding of serial to parallel data conversion using the \"74HC595\" shift register."
         },
-        "2": {
+        "1": {
             "title": "Software development internship",
             "location": "Görlitz, Saxony, Germany",
             "startDate": "June 12, 2023",
