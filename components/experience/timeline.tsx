@@ -80,7 +80,7 @@ export default function Timeline() {
                                             </div>
                                             {experience.current && (
                                                 <Badge variant="default" className="w-fit animate-pulse">
-                                                    Aktuell
+                                                    {t("workexperience.badge.current")}
                                                 </Badge>
                                             )}
                                         </div>
