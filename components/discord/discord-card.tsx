@@ -17,21 +17,23 @@ export default function DiscordCard() {
         socket: true,
     })
 
-    const [spotifyElapsed, setSpotifyElapsed] = useState(0)
-    const [spotifyTotal, setSpotifyTotal] = useState(0)
+    const [playerElapsed, setPlayerElapsed] = useState(0)
+    const [playerTotal, setPlayerTotal] = useState(0)
     const [formattedActivityTime, setFormattedActivityTime] = useState("")
 
     const t = useTranslations();
 
     useEffect(() => {
-        if (data?.listening_to_spotify && data.spotify) {
-            const start = data.spotify.timestamps.start
-            const end = data.spotify.timestamps.end
-            setSpotifyTotal(end - start)
+        if (data?.listening_to_spotify && data.spotify || soundcloud) {
+            const start = data?.spotify?.timestamps.start || soundcloud?.timestamps?.start
+            const end = data?.spotify?.timestamps.end || soundcloud?.timestamps?.end
+            
+            if (!start || !end) return
+            setPlayerTotal(end - start)
 
             const updateElapsed = () => {
                 const now = Date.now()
-                setSpotifyElapsed(now - start)
+                setPlayerElapsed(now - start)
             }
 
             updateElapsed()
@@ -45,6 +47,14 @@ export default function DiscordCard() {
         () => data?.activities.find((activity) => activity.name !== "Spotify"),
         [data]
     )
+
+    const soundcloud = useMemo(() => {
+    if (!data?.activities) return null;
+
+    return data.activities.find((activity) => 
+        activity.assets?.large_image?.toLowerCase().includes("sndcdn")
+    ) ?? null;
+}, [data]);
 
     useEffect(() => {
         if (!mainActivity?.timestamps?.start) return
@@ -60,12 +70,12 @@ export default function DiscordCard() {
         return () => clearInterval(interval)
     }, [mainActivity])
 
-    const spotifyProgress = spotifyTotal
-        ? Math.min(100, Math.max(0, (spotifyElapsed / spotifyTotal) * 100))
+    const spotifyProgress = playerTotal
+        ? Math.min(100, Math.max(0, (playerElapsed / playerTotal) * 100))
         : 0
 
-    const currentTime = formatTime(spotifyElapsed)
-    const totalTime = formatTime(spotifyTotal)
+    const currentTime = formatTime(playerElapsed)
+    const totalTime = formatTime(playerTotal)
 
     if (loading) {
         return (
@@ -152,6 +162,17 @@ export default function DiscordCard() {
                     {listening_to_spotify && spotify ? (
                         <div className="space-y-1">
                             <Marquee song={spotify.song} artist={spotify.artist} />
+                            <div className="space-y-1">
+                                <Progress value={spotifyProgress} className="h-1" />
+                                <div className="flex justify-between text-xs text-neutral-500 dark:text-neutral-500">
+                                    <span>{currentTime}</span>
+                                    <span>{totalTime}</span>
+                                </div>
+                            </div>
+                        </div>
+                    ) : soundcloud ? (
+                        <div className="space-y-1">
+                            <Marquee song={soundcloud.details!} artist={soundcloud.name} />
                             <div className="space-y-1">
                                 <Progress value={spotifyProgress} className="h-1" />
                                 <div className="flex justify-between text-xs text-neutral-500 dark:text-neutral-500">
