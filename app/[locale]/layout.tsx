@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     authors: [
         {
             name: "RECHERGG",
-            url: "https://jtobaben.me",
+            url: "https://tobaben.dev",
         },
     ],
     creator: "RECHERGG",
