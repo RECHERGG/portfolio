@@ -3,7 +3,7 @@ export const siteConfig = {
     url: "https://tobaben.dev",
     ogImage: "https://ui.shadcn.com/og.jpg",
     description:
-      "Softwareentwickler mit Fokus auf React, Next.js und Java. Portfolio mit verschiedenen Projekten und Experimenten.",
+      "Softwareentwickler mit Fokus auf Backend. Java/Kotlin und Next.js. Mein Portfolio mit verschiedenen Projekten und Experimenten.",
     links: {
         mail: "contact@tobaben.dev",
         linkedin: "https://www.linkedin.com/in/joel-tobaben",

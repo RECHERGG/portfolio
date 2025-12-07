@@ -24,42 +24,6 @@ type Technologie = {
 export function getProjects(t: (key: string) => string): ProjectProps[] {
     return [
         {
-            thumbnail: polar,
-            title: "polar-java-sdk",
-            description: t("projects.3.description"),
-            development: true,
-            technologies: [
-                {
-                    name: "Java"
-                },
-                {
-                    name: "JUnit"
-                },
-                {
-                    name: "slf4j"
-                },
-                {
-                    name: "log4j2"
-                },
-                {
-                    name: "lombok"
-                },
-                {
-                    name: "okhttp3"
-                },
-                {
-                    name: "gson"
-                },
-                {
-                    name: "jackson-databind"
-                },
-                {
-                    name: "annotations"
-                },
-            ],
-            github: "https://github.com/RECHERGG/polar-java-sdk",
-        },
-        {
             thumbnail: portfolioV2,
             title: "Portfolio v2",
             description: t("projects.2.description"),
