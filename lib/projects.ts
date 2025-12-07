@@ -26,7 +26,7 @@ export function getProjects(t: (key: string) => string): ProjectProps[] {
         {
             thumbnail: polar,
             title: "polar-java-sdk",
-            description: t("projects.1.description"),
+            description: t("projects.3.description"),
             development: true,
             technologies: [
                 {
@@ -101,7 +101,7 @@ export function getProjects(t: (key: string) => string): ProjectProps[] {
         {
             thumbnail: portfolioV1,
             title: "Portfolio v1",
-            description: t("projects.3.description"),
+            description: t("projects.1.description"),
             technologies: [
                 {
                     name: "Next.js"
@@ -131,7 +131,7 @@ export function getProjects(t: (key: string) => string): ProjectProps[] {
         {
             thumbnail: nextPizza,
             title: "NextPizza",
-            description: t("projects.4.description"),
+            description: t("projects.0.description"),
             technologies: [
                 {
                     name: "Next.js"

@@ -61,16 +61,16 @@
     },
     "projects": {
         "title": "Projects",
-        "1" : {
+        "3" : {
             "description": "A Java SDK for integration with the Polar.sh API, providing a type-safe connection to the service. The SDK utilizes modern Java features and offers a user-friendly interface and is not officially affiliated with polar.sh"
         },
         "2": {
             "description": "This portfolio presents my journey and work as a fullstack software engineer, featuring hands-on experience with modern web technologies."
         },
-        "3": {
+        "1": {
             "description": "This is the first version of my personal portfolio. It includes information about me, my journey, and my techstack."
         },
-        "4": {
+        "0": {
             "description": "This project was created during my internship. It also was my first real touch with Next.js"
         }
     },
