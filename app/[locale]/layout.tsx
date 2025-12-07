@@ -47,7 +47,14 @@ export const metadata: Metadata = {
         description: siteConfig.description,
         creator: "@rechergg",
         site: "@rechergg",
-        images: [`twitter-image.png`],
+        images: [
+            {
+                url: `twitter-image.png`,
+                width: 1200,
+                height: 630,
+                alt: siteConfig.seoName,
+            }
+        ],
     }
 };
 
