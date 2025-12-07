@@ -1,5 +1,6 @@
 export const siteConfig = {
     name: "tobaben.dev",
+    seoName: "Hi, I'm Joel. I'm a Fullstack Software Engineer and this is my portfolio.",
     url: "https://tobaben.dev",
     ogImage: "https://ui.shadcn.com/og.jpg",
     description:
