@@ -77,7 +77,7 @@ export default async function LocalLayout({ children, params }: Props) {
 
     return (
         <html lang={locale} suppressHydrationWarning>
-            <body className={`${inter.className} antialiased [--header-height:calc(var(--spacing)*14)]`}>
+            <body className={`${inter.className} antialiased [--header-height:calc(var(--spacing)*10)]`}>
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
@@ -85,11 +85,14 @@ export default async function LocalLayout({ children, params }: Props) {
                     disableTransitionOnChange
                 >
                     <NextIntlClientProvider messages={messages} locale={locale}>
-                        <div className="min-h-screen flex flex-col space-y-8">
+                        <div className="min-h-screen flex flex-col">
                             <SiteHeader />
 
-                            <div className="container mx-auto px-4 min-h-screen flex flex-col md:max-w-[53%]">
-                                <main className="flex-1 flex">{children}</main>
+
+                            <div className="pt-[var(--header-height)]">
+                                <div className="container mx-auto px-4 min-h-screen flex flex-col md:max-w-[53%]">
+                                    <main className="flex-1 flex">{children}</main>
+                                </div>
                             </div>
 
                             <div className="flex items-center justify-center">
