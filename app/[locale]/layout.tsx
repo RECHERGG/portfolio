@@ -14,7 +14,7 @@ import SiteFooter from "@/components/site-footer";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: siteConfig.name,
+    title: siteConfig.seoName,
     description: siteConfig.description,
     keywords: ["portfolio", "developer", "java", "backend", "tobaben", "joel", "rechergg"],
     authors: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         locale: "de_DE",
         alternateLocale: "en_US",
         url: process.env.NEXT_PUBLIC_APP_URL!,
-        title: siteConfig.name,
+        title: siteConfig.seoName,
         description: siteConfig.description,
         siteName: siteConfig.name,
         images: [
@@ -37,13 +37,13 @@ export const metadata: Metadata = {
                 url: `opengraph-image.png`,
                 width: 1200,
                 height: 630,
-                alt: siteConfig.name,
+                alt: siteConfig.seoName,
             }
         ]
     },
     twitter: {
         card: "summary_large_image",
-        title: siteConfig.name,
+        title: siteConfig.seoName,
         description: siteConfig.description,
         creator: "@rechergg",
         site: "@rechergg",
