@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         description: siteConfig.description,
         creator: "@rechergg",
         site: "@rechergg",
-        images: [`opengraph-image.png`],
+        images: [`twitter-image.png`],
     }
 };
 
