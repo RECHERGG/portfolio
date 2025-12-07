@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         description: siteConfig.description,
         creator: "@rechergg",
         site: "@rechergg",
-        images: [`${process.env.NEXT_PUBLIC_APP_URL}/`],
+        images: [`${process.env.NEXT_PUBLIC_APP_URL}/opengraph-image.png`],
     }
 };
 
