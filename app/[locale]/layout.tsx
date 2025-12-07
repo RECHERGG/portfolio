@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         siteName: siteConfig.name,
         images: [
             {
-                url: `${process.env.NEXT_PUBLIC_APP_URL}/opengraph-image.png`,
+                url: `opengraph-image.png`,
                 width: 1200,
                 height: 630,
                 alt: siteConfig.name,
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
         title: siteConfig.name,
         description: siteConfig.description,
         creator: "@rechergg",
-        images: [`${process.env.NEXT_PUBLIC_APP_URL}/opengraph-image.png`],
+        images: [`opengraph-image.png`],
     }
 };
 
