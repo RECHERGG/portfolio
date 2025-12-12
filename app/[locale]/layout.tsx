@@ -96,9 +96,8 @@ export default async function LocalLayout({ children, params }: Props) {
                         <div className="min-h-screen flex flex-col">
                             <SiteHeader />
 
-
                             <div className="pt-[var(--header-height)]">
-                                <div className="container mx-auto px-4 min-h-screen flex flex-col md:max-w-[53%]">
+                                <div className="container mx-auto px-4 min-h-screen flex flex-col max-w-4xl">
                                     <main className="flex-1 flex">{children}</main>
                                 </div>
                             </div>

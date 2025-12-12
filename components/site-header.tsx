@@ -19,7 +19,7 @@ export function SiteHeader() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <header className="shadow-inner bg-opacity-15 w-[93.2%] sm:w-[95%] sm:max-w-screen-sm md:w-[49.5%] lg:w-[51.3%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
+    <header className="sticky top-5 z-40 mx-auto max-w-4xl w-full rounded-2xl bg-card p-2 shadow-inner border border-secondary flex justify-between items-center">
       <Link href="/" className="font-bold text-lg flex items-center">
         <Terminal className="size-5" />
         <span className="font-semibold text-lg">{siteConfig.name}</span>
