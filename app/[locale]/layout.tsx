@@ -70,8 +70,6 @@ export function generateStaticParams() {
 }
 
 export default async function LocalLayout({ children, params }: Props) {
-    const cookieStore = cookies();
-    const cookieConsent = (await cookieStore).get("cookieConsent")?.value;
     const { locale } = await params;
 
     if (!hasLocale(locales, locale)) {
@@ -110,10 +108,6 @@ export default async function LocalLayout({ children, params }: Props) {
                                 <SiteFooter />
                             </div>
                         </div>
-
-                        {/*cookieConsent === "true" && (
-                            // Analytics scripts here
-                        )*/}
 
                         <CookieConsentWrapper />
                     </NextIntlClientProvider>

@@ -4,6 +4,7 @@ import { CookieIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export function CookieConsent({
   variant = "default",
@@ -77,9 +78,9 @@ export function CookieConsent({
                 agree to our use of cookies.
               </span>
               <br />
-              <a href="/privacy-policy" className="text-xs underline">
+              <Link href="/privacy-policy" className="text-xs underline">
                 Learn more.
-              </a>
+              </Link>
             </p>
           </div>
           <div className="grid grid-cols-2 items-center gap-2 p-3 sm:p-4 sm:py-5 border-t border-border dark:bg-background/20">

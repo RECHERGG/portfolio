@@ -7,12 +7,12 @@ import { Separator } from "./ui/separator"
 import { Button } from "./ui/button"
 import LanguageSwitcher from "./language-switcher"
 import { siteConfig } from "@/lib/config"
-import {  ChevronsDown, Menu, Terminal } from "lucide-react"
+import { Menu, Terminal } from "lucide-react"
 import { getNavItems } from "@/lib/nav-items"
 import { useTranslations } from "next-intl";
 import React from "react";
 import { Sheet, SheetContent, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "./ui/navigation-menu";
+import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "./ui/navigation-menu";
 
 export function SiteHeader() {
   const t = useTranslations();
