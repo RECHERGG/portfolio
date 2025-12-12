@@ -10,6 +10,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { SiteHeader } from "@/components/site-header";
 import { siteConfig } from "@/lib/config";
 import SiteFooter from "@/components/site-footer";
+import { cookies } from "next/headers";
+import { CookieConsentWrapper } from "@/components/cookie-consent-wrapper";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -68,6 +70,8 @@ export function generateStaticParams() {
 }
 
 export default async function LocalLayout({ children, params }: Props) {
+    const cookieStore = cookies();
+    const cookieConsent = (await cookieStore).get("cookieConsent")?.value;
     const { locale } = await params;
 
     if (!hasLocale(locales, locale)) {
@@ -106,6 +110,12 @@ export default async function LocalLayout({ children, params }: Props) {
                                 <SiteFooter />
                             </div>
                         </div>
+
+                        {/*cookieConsent === "true" && (
+                            // Analytics scripts here
+                        )*/}
+
+                        <CookieConsentWrapper />
                     </NextIntlClientProvider>
                 </ThemeProvider>
             </body>

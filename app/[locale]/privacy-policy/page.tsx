@@ -1,9 +1,22 @@
 'use client';
 
+import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 
 export default function PrivacyPolicyPage() {
     const t = useTranslations("privacy-policy");
+
+    const deleteAllCookies = () => {
+        document.cookie.split(";").forEach((cookie) => {
+            const name = cookie.split("=")[0].trim();
+            document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
+            document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=${window.location.hostname}`;
+            document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=.${window.location.hostname}`;
+        });
+
+        localStorage.clear();
+        sessionStorage.clear();
+    };
 
     return (
         <div className="w-full max-w-3xl p-6 mx-auto">
@@ -39,6 +52,16 @@ export default function PrivacyPolicyPage() {
                 <div>
                     <h2 className="font-semibold text-xl mt-6">{t("analytics.title")}</h2>
                     <p>{t("analytics.text")}</p>
+                    <Button
+                        onClick={() => {
+                            deleteAllCookies();
+                            setTimeout(() => {
+                                window.location.reload();
+                            }, 100);
+                        }}
+                    >
+                        Reject
+                    </Button>
                 </div>
 
                 <div>
