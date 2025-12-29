@@ -15,12 +15,6 @@ import { initBklit } from "@bklit/sdk";
 
 const inter = Inter({ subsets: ['latin'] });
 
-initBklit({
-    projectId: process.env.PROJECT_ID as string,
-    apiKey: process.env.NEXT_PUBLIC_BKLIT_API_KEY as string,
-    debug: process.env.NODE_ENV === "development",
-});
-
 export const metadata: Metadata = {
     title: siteConfig.seoName,
     description: siteConfig.description,
@@ -76,6 +70,12 @@ export function generateStaticParams() {
 }
 
 export default async function LocalLayout({ children, params }: Props) {
+    initBklit({
+        projectId: process.env.PROJECT_ID as string,
+        apiKey: process.env.NEXT_PUBLIC_BKLIT_API_KEY as string,
+        debug: process.env.NODE_ENV === "development",
+    });
+
     const { locale } = await params;
 
     if (!hasLocale(locales, locale)) {
