@@ -96,7 +96,7 @@
         },
         "analytics": {
             "title": "Analytics (Bklit Analytics)",
-            "text": "This website uses Bklit Analytics for statistical evaluation of visitor behavior. Bklit stores a unique session identifier in the browser (localStorage) and transmits technical usage data to the analytics server, including the pages visited, time of access, referrer, browser information, marketing parameters (UTM tags), and a pseudonymous session ID. Additionally, your IP address is transmitted with each request and may be processed in pseudonymized or anonymized form. The tracking script is only activated after you have given your explicit consent in the cookie banner in accordance with Article 6(1)(a) GDPR and §25 TTDSG. You can revoke your consent at any time in the cookie settings."
+            "text": "This website uses Bklit Analytics for the statistical evaluation of user behavior. Bklit does not store personal data and does not use cookies requiring consent. All collected data is anonymized, and no user identification occurs. The tracking is cookie-less and fully compliant with GDPR and TTDSG."
         },
         "hosting": {
             "title": "Website Hosting",

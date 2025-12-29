@@ -52,7 +52,7 @@ export default function PrivacyPolicyPage() {
                 <div>
                     <h2 className="font-semibold text-xl mt-6">{t("analytics.title")}</h2>
                     <p>{t("analytics.text")}</p>
-                    <Button
+                    {/*<Button
                         onClick={() => {
                             deleteAllCookies();
                             setTimeout(() => {
@@ -61,7 +61,7 @@ export default function PrivacyPolicyPage() {
                         }}
                     >
                         Reject
-                    </Button>
+                    </Button>*/}
                 </div>
 
                 <div>

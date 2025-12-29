@@ -7,8 +7,8 @@ import { initBklit } from "@bklit/sdk";
 export function CookieConsentWrapper() {
   const handleAccept = () => {
     initBklit({
-      projectId: "cmj3b77lf000151h0q1e0k8jf",
-      apiKey: process.env.NEXT_PUBLIC_BKLIT_API_KEY!,
+      projectId: process.env.PROJECT_ID as string,
+      apiKey: process.env.NEXT_PUBLIC_BKLIT_API_KEY as string,
       debug: process.env.NODE_ENV === "development",
     });
   };
