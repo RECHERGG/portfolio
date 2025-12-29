@@ -89,8 +89,9 @@ export default async function LocalLayout({ children, params }: Props) {
         <html lang={locale} suppressHydrationWarning>
             <body className={`${inter.className} antialiased [--header-height:calc(var(--spacing)*10)]`}>
                 <BklitComponent
-                    projectId="your-project-id"
-                    apiKey="your-api-key"
+                    projectId={process.env.PROJECT_ID as string}
+                    apiKey={process.env.NEXT_PUBLIC_BKLIT_API_KEY as string}
+                    debug={process.env.NODE_ENV === "development"}
                 />
                 <ThemeProvider
                     attribute="class"
