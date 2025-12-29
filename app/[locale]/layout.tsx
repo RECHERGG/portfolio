@@ -11,7 +11,7 @@ import { SiteHeader } from "@/components/site-header";
 import { siteConfig } from "@/lib/config";
 import SiteFooter from "@/components/site-footer";
 //import { CookieConsentWrapper } from "@/components/cookie-consent-wrapper";
-import { initBklit } from "@bklit/sdk";
+import { BklitComponent } from '@bklit/sdk/nextjs';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -70,12 +70,6 @@ export function generateStaticParams() {
 }
 
 export default async function LocalLayout({ children, params }: Props) {
-    initBklit({
-        projectId: process.env.PROJECT_ID as string,
-        apiKey: process.env.NEXT_PUBLIC_BKLIT_API_KEY as string,
-        debug: process.env.NODE_ENV === "development",
-    });
-
     const { locale } = await params;
 
     if (!hasLocale(locales, locale)) {
@@ -94,6 +88,10 @@ export default async function LocalLayout({ children, params }: Props) {
     return (
         <html lang={locale} suppressHydrationWarning>
             <body className={`${inter.className} antialiased [--header-height:calc(var(--spacing)*10)]`}>
+                <BklitComponent
+                    projectId="your-project-id"
+                    apiKey="your-api-key"
+                />
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
