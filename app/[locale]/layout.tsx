@@ -10,7 +10,6 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { SiteHeader } from "@/components/site-header";
 import { siteConfig } from "@/lib/config";
 import SiteFooter from "@/components/site-footer";
-import { cookies } from "next/headers";
 import { CookieConsentWrapper } from "@/components/cookie-consent-wrapper";
 
 const inter = Inter({ subsets: ['latin'] });
