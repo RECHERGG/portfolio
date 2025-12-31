@@ -21,9 +21,10 @@ interface GitHubRepo {
 interface GitHubProjectCardProps {
   owner: string
   repo: string
+  collaborator?: boolean
 }
 
-export default function GitHubProjectCard({ owner, repo }: GitHubProjectCardProps) {
+export default function GitHubProjectCard({ owner, repo, collaborator }: GitHubProjectCardProps) {
   const [repoData, setRepoData] = useState<GitHubRepo | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -104,7 +105,7 @@ export default function GitHubProjectCard({ owner, repo }: GitHubProjectCardProp
                   {repoData.name}
                 </h3>
                 <Badge variant="outline" className="text-xs">
-                  Collaborator
+                  {collaborator ? <span>Collaborator</span> : <span>Contributor</span>}
                 </Badge>
               </div>
               <p className="text-sm text-neutral-600 dark:text-neutral-400 line-clamp-2 mb-2">{repoData.description}</p>
