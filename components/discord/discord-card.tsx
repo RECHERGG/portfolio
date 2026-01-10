@@ -129,7 +129,7 @@ export default function DiscordCard() {
                 {(soundcloudCoverUrl || spotify?.album_art_url) && (
                     <>
                         <Image
-                            src={soundcloudCoverUrl || spotify.album_art_url}
+                            src={soundcloudCoverUrl || spotify!.album_art_url}
                             alt="SoundCloud Artwork"
                             fill
                             className="object-cover rounded-lg opacity-30"
