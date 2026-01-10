@@ -126,7 +126,7 @@ export default function DiscordCard() {
         <Link href={`https://discordapp.com/users/${siteConfig.discordId}`} target="_blank" rel="noopener noreferrer">
             <div className="relative dark:bg-neutral-900 bg-neutral-100 rounded-lg flex items-start p-4 gap-4 dark:hover:bg-neutral-700 hover:bg-neutral-200 border hover:border-gray-500 transition select-none">
 
-                {soundcloudCoverUrl || spotify?.album_art_url && (
+                {(soundcloudCoverUrl || spotify?.album_art_url) && (
                     <>
                         <Image
                             src={soundcloudCoverUrl || spotify.album_art_url}
