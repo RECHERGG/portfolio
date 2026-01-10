@@ -10,7 +10,6 @@ import { useTranslations } from "next-intl";
 import { Progress } from "../ui/progress";
 import { Marquee } from "./spotify-marquee";
 import Image from 'next/image'
-import { log } from "console";
 
 export default function DiscordCard() {
     const { loading, status: data } = useLanyard({
