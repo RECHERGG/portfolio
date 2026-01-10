@@ -10,6 +10,7 @@ import { useTranslations } from "next-intl";
 import { Progress } from "../ui/progress";
 import { Marquee } from "./spotify-marquee";
 import Image from 'next/image'
+import { log } from "console";
 
 export default function DiscordCard() {
     const { loading, status: data } = useLanyard({
@@ -27,7 +28,7 @@ export default function DiscordCard() {
         if (data?.listening_to_spotify && data.spotify || soundcloud) {
             const start = data?.spotify?.timestamps.start || soundcloud?.timestamps?.start
             const end = data?.spotify?.timestamps.end || soundcloud?.timestamps?.end
-            
+
             if (!start || !end) return
             setPlayerTotal(end - start)
 
@@ -49,12 +50,24 @@ export default function DiscordCard() {
     )
 
     const soundcloud = useMemo(() => {
-    if (!data?.activities) return null;
+        if (!data?.activities) return null;
 
-    return data.activities.find((activity) => 
-        activity.assets?.large_image?.toLowerCase().includes("sndcdn")
-    ) ?? null;
-}, [data]);
+        return data.activities.find((activity) =>
+            activity.assets?.large_image?.toLowerCase().includes("sndcdn")
+        ) ?? null;
+    }, [data]);
+
+    const soundcloudCoverUrl = useMemo(() => {
+        if (!soundcloud?.assets?.large_image) return null
+        const raw = soundcloud.assets.large_image
+
+        const parts = raw.split("https/")
+        if (parts.length > 1) {
+            return `https://${parts[1]}`
+        }
+
+        return null
+    }, [soundcloud])
 
     useEffect(() => {
         if (!mainActivity?.timestamps?.start) return
@@ -113,6 +126,21 @@ export default function DiscordCard() {
     return (
         <Link href={`https://discordapp.com/users/${siteConfig.discordId}`} target="_blank" rel="noopener noreferrer">
             <div className="relative dark:bg-neutral-900 bg-neutral-100 rounded-lg flex items-start p-4 gap-4 dark:hover:bg-neutral-700 hover:bg-neutral-200 border hover:border-gray-500 transition select-none">
+
+                {soundcloudCoverUrl || spotify?.album_art_url && (
+                    <>
+                        <Image
+                            src={soundcloudCoverUrl || spotify.album_art_url}
+                            alt="SoundCloud Artwork"
+                            fill
+                            className="object-cover rounded-lg opacity-30"
+                            sizes="300px"
+                        />
+
+                        <div className="absolute inset-0 bg-black/40 rounded-lg" />
+                    </>
+                )}
+
                 <div className="absolute top-2 right-2 opacity-80">
                     <svg
                         role="img"
@@ -152,7 +180,7 @@ export default function DiscordCard() {
                     </div>
                 </div>
 
-                <div className="flex-1 min-w-0 space-y-1">
+                <div className="flex-1 min-w-0 space-y-1 z-10">
                     <div className="overflow-hidden">
                         <p className="text-neutral-900 dark:text-white leading-tight">
                             {discord_user.global_name || discord_user.username}

@@ -15,6 +15,14 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'archive.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i1.sndcdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.scdn.co',
       }
     ]
   }
