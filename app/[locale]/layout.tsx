@@ -92,7 +92,8 @@ export default async function LocalLayout({ children, params }: Props) {
             <body className={`${inter.className} antialiased [--header-height:calc(var(--spacing)*10)]`}>
                 <OpenPanelComponent
                     apiUrl={process.env.NEXT_PUBLIC_OPENPANEL_API_URL as string + "/api/op/"}
-                    clientId={process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID as string + "/api/op/op1.js"}
+                    scriptUrl={process.env.NEXT_PUBLIC_OPENPANEL_API_URL as string + "/api/op/op1.js"}
+                    clientId={process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID as string}
                     trackScreenViews={true}
                     trackAttributes={true}
                     trackOutgoingLinks={true}
