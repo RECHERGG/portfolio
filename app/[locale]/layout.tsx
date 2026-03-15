@@ -11,7 +11,9 @@ import { SiteHeader } from "@/components/site-header";
 import { siteConfig } from "@/lib/config";
 import SiteFooter from "@/components/site-footer";
 //import { CookieConsentWrapper } from "@/components/cookie-consent-wrapper";
-import { BklitComponent } from '@bklit/sdk/nextjs';
+import { OpenPanelComponent } from '@openpanel/nextjs';
+
+
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -88,10 +90,11 @@ export default async function LocalLayout({ children, params }: Props) {
     return (
         <html lang={locale} suppressHydrationWarning>
             <body className={`${inter.className} antialiased [--header-height:calc(var(--spacing)*10)]`}>
-                <BklitComponent
-                    projectId={process.env.PROJECT_ID as string}
-                    apiKey={process.env.NEXT_PUBLIC_BKLIT_API_KEY as string}
-                    debug={process.env.NODE_ENV === "development"}
+                <OpenPanelComponent
+                    clientId={process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID as string}
+                    trackScreenViews={true}
+                    trackAttributes={true}
+                    trackOutgoingLinks={true}
                 />
                 <ThemeProvider
                     attribute="class"
