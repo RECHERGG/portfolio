@@ -91,7 +91,7 @@ export default async function LocalLayout({ children, params }: Props) {
         <html lang={locale} suppressHydrationWarning>
             <body className={`${inter.className} antialiased [--header-height:calc(var(--spacing)*10)]`}>
                 <OpenPanelComponent
-                    apiUrl={process.env.NEXT_PUBLIC_OPENPANEL_API_URL as string + "/api/op/"}
+                    apiUrl={process.env.NEXT_PUBLIC_OPENPANEL_API_URL as string}
                     clientId={process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID as string}
                     trackScreenViews={true}
                     trackAttributes={true}
