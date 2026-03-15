@@ -95,8 +95,8 @@
             "text": "Wenn Sie mich per E-Mail kontaktieren, werden Ihre übermittelten Daten (z. B. E-Mail-Adresse, Nachricht) zwecks Bearbeitung der Anfrage gespeichert. Eine Weitergabe erfolgt nicht ohne Ihre Einwilligung."
         },
         "analytics": {
-            "title": "Analyse (Bklit Analytics)",
-            "text": "Diese Website verwendet Bklit Analytics zur statistischen Auswertung des Nutzerverhaltens. Bklit speichert keine personenbezogenen Daten und verwendet keine Cookies, die eine Einwilligung erfordern. Alle gesammelten Daten werden anonymisiert und keine Identifizierung von Nutzern erfolgt. Das Tracking erfolgt ohne Cookies und ist datenschutzkonform gemäß DSGVO und TTDSG."
+            "title": "Analyse (Openpanel)",
+            "text": "Diese Website verwendet Openpanel Analytics zur statistischen Auswertung des Nutzerverhaltens. Openpanel speichert keine personenbezogenen Daten und verwendet keine Cookies, die eine Einwilligung erfordern. Alle gesammelten Daten werden anonymisiert und keine Identifizierung von Nutzern erfolgt. Das Tracking erfolgt ohne Cookies und ist datenschutzkonform gemäß DSGVO und TTDSG."
         },
         "hosting": {
             "title": "Hosting der Website",

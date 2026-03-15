@@ -95,8 +95,8 @@
             "text": "If you contact me via email, your transmitted data (e.g. email address, message content) will be stored for the purpose of processing the request. This data will not be shared without your consent."
         },
         "analytics": {
-            "title": "Analytics (Bklit Analytics)",
-            "text": "This website uses Bklit Analytics for the statistical evaluation of user behavior. Bklit does not store personal data and does not use cookies requiring consent. All collected data is anonymized, and no user identification occurs. The tracking is cookie-less and fully compliant with GDPR and TTDSG."
+            "title": "Analytics (Openpanel)",
+            "text": "This website uses Openpanel Analytics for the statistical evaluation of user behavior. Openpanel does not store personal data and does not use cookies requiring consent. All collected data is anonymized, and no user identification occurs. The tracking is cookie-less and fully compliant with GDPR and TTDSG."
         },
         "hosting": {
             "title": "Website Hosting",

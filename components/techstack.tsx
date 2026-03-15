@@ -24,7 +24,7 @@ export default function TechStack() {
                 <div className="space-y-2">
                     <h3 className="text-xl font-semibold text-neutral-900 dark:text-white">Open Source Contributions</h3>
                     <GitHubProjectCard owner="thePolocloud" repo="polocloud" collaborator={true} />
-                    <GitHubProjectCard owner="bklit" repo="bklit" />
+                    {/* <GitHubProjectCard owner="bklit" repo="bklit" /> */}
                 </div>
 
                 <Separator className="my-4" />

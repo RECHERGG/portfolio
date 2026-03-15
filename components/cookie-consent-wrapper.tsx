@@ -2,20 +2,20 @@
 
 import { useEffect } from "react";
 import { CookieConsent } from "./cookie-consent";
-import { initBklit } from "@bklit/sdk";
+//import { initBklit } from "@bklit/sdk";
 
 export function CookieConsentWrapper() {
   const handleAccept = () => {
-    initBklit({
-      projectId: process.env.PROJECT_ID as string,
-      apiKey: process.env.NEXT_PUBLIC_BKLIT_API_KEY as string,
-      debug: process.env.NODE_ENV === "development",
-    });
+    // initBklit({
+    //   projectId: process.env.PROJECT_ID as string,
+    //   apiKey: process.env.NEXT_PUBLIC_BKLIT_API_KEY as string,
+    //   debug: process.env.NODE_ENV === "development",
+    // });
   };
 
   const handleDecline = () => {
     if (typeof window !== "undefined") {
-      localStorage.removeItem("bklit_session_id");
+      // localStorage.removeItem("bklit_session_id");
     }
   };
 
